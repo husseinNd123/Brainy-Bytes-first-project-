@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Book your demo!</title>
+        <link rel="shortcut icon" type="image/jpeg" href="icon.jpeg">
+        <link
+      rel="stylesheet"
+      href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css"
+    />
+        <style>
+            body{
+                overflow-x: hidden;
+            }
+           main {
+         display: flex;
+         flex-wrap: wrap;
+         }
+  
+        .column {
+              flex: 1;
+                 padding: 10px;
+                   }
+            h1{
+                font-size: 55px;
+                font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                color: rgb(46, 45, 45);
+                margin-top: 1mm;
+                
+            }
+            h2{
+                font-size: 60px;
+                font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                color:rgb(209, 209, 9);
+                margin-top: -8mm;
+                
+                
+            }
+            .div0{
+                display: flex;
+                margin-bottom: 10mm;
+            }
+            select{
+                width: 10%;
+                border: 2.5px solid rgb(135, 140, 143); 
+              border-radius: 6px;
+                margin: 8px 0;
+              outline: none;
+                padding: 5px;
+                box-sizing: border-box;
+               transition: 0.3ms;
+               font-size: larger;
+                font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; 
+            }
+            input[type=tel]{
+    width: 100%;
+    border: 2px solid rgb(135, 140, 143);
+    border-radius: 6px;
+    margin: 8px 0;
+    outline: none;
+    padding: 15px;
+    box-sizing: border-box;
+    transition: 0.3ms;
+    font-size: larger;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-left: 5mm;
+
+  }
+  input[type=radio]{
+    accent-color: rgb(221, 209, 38);
+    width: 18px;
+    height: 18px;
+  }
+            
+      label{
+        font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        color: rgb(53, 47, 47);
+        font-size: 20px;
+        margin-top: -15mm;
+        margin-bottom: -1mm;
+        
+      }  
+      button{
+        padding: 10px 20px;
+       height: 50px;
+       width: 150px;
+       border-radius: 2mm;
+       border: 2.5px solid rgb(135, 140, 143); ;
+       color: rgb(58, 66, 70); 
+       font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+       font-size: 20px;
+       text-align: center;
+       background-color: rgb(253, 253, 253);
+       
+      }  
+      button:focus{
+        border-color: rgb(63, 159, 255);
+       box-shadow: 0 0 8px 0 dodgerblue;
+      }
+      .submitt{
+        margin-top: 7mm;
+        margin-left: 2mm;
+        margin-right: 2mm;
+        width: 400px;
+        height: 60px;
+        color: rgb(14, 7, 19);
+      padding: 10px 20px;
+       border-radius: 5px;
+       border: 3px solid rgb(172, 162, 30);
+        cursor: pointer;
+         font-family:'Times New Roman', Times, serif;
+       font-size: 30px;
+       text-align: center;
+       background-color: rgb(253, 253, 253);
+      }
+      textarea{
+       box-sizing: border-box;
+        margin-right: 5mm;
+        margin-top: 5mm;
+        margin-bottom:-2mm;
+       border: 2.5px solid rgb(135, 140, 143); 
+       border-radius: 2mm;
+       font-size: 18px;
+       font-family:'Times New Roman', Times, serif;  ;
+      padding-top: 2mm;
+      padding-bottom: 15mm;
+      }
+      .but{
+        margin-top: -3mm;
+      }
+      .main-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 57vh;
+  
+}
+.main-container p{
+  font-weight: bold;
+   font-size: 25px;
+ 
+}
+.radio-buttons{
+  width: 100%;
+  text-align: center;
+}
+.custom-radio input{
+  display: none;
+}
+.radio-btn{
+  margin: 8px;
+  
+  width: 100px;
+  height: 120px;
+  border: 3px solid transparent;
+  display: inline-block;
+  border-radius: 10px;
+  position: relative;
+  text-align: center;
+  box-shadow: 0 0 20px #c3c3c367;
+        cursor: pointer;
+}
+.radio-btn > i {
+        color: #ffffff;
+        background-color: #e2df3a;
+        font-size: 20px;
+        position: absolute;
+        top: -15px;
+        left: 50%;
+        transform: translateX(-50%) scale(4);
+        border-radius: 50px;
+        padding: 3px;
+        transition: 0.2s;
+        pointer-events: none;
+        opacity: 0;
+      }
+
+      .custom-radio input:checked + .radio-btn {
+        border: 3px solid #616166;
+      }
+
+      .custom-radio input:checked + .radio-btn > i {
+        opacity: 1;
+        transform: translateX(-50%) scale(1);
+      }
+        </style>
+    </head>
+    <body style="background-color: whitesmoke">
+     <main>
+       <div class="column">
+          <h1>First step of a road </h1>
+          <h2>full of success</h2>
+           <img src="call center.png" style="border-radius: 10mm; height: 550px; width: 580px ;margin-top: -18mm;">
+        </div>
+        <div class="column">
+            <h3 style="color: rgb(20, 20, 20);font-size: 25px;
+            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; ">Book Now And Get Certified</h3>
+        <form name="demo " id="de" method="get" action=""> 
+           <div class="div0">
+            <select title="Country"> 
+                <option></option> 
+                <option>+961</option> 
+                <option>+963</option> 
+                <option>+971</option>
+                <option>+962</option>
+                <option>+964</option>
+                <option>+20</option> 
+                <option>+965</option> 
+                <option>+968</option>
+                <option>+966</option>
+                <option>+974</option>
+                <option>+967</option> 
+                <option>+90</option> 
+                <option>+970</option>
+                <option> +1</option>
+                <option>+44</option>
+                <option> +91</option> 
+                <option>+54</option> 
+                <option>+61</option>
+                <option>+973</option>
+                <option>+33</option>
+                <option>+49</option> 
+                <option>+98</option> 
+                <option>+39</option>
+                <option>+218</option>
+                <option>+1 808</option>
+                <option>+212</option> 
+                <option>+27</option>
+                <option>+249</option>
+                <option>+216</option>
+                <option>+380</option> 
+                <option>+46</option>
+                <option>+41</option>
+                <option>+381</option>
+            </select>
+            <input type="tel" id="phone" name="phone" placeholder="Your Phone Number" >
+           </div>
+          
+           <div class="main-container">
+            <p>Kid's Grade:</p>
+            <div class="radio-buttons">
+              <label class="custom-radio">
+                <input type="radio" name="radio" checked />
+                <span class="radio-btn"
+                  ><i class="las la-check"></i>
+                    <h3>Grade <br>1-3</h3>
+                </span>
+              </label>
+              <label class="custom-radio">
+                <input type="radio" name="radio" />
+                <span class="radio-btn"
+                  ><i class="las la-check"></i>
+                    <h3>Grade <br>4-6</h3>
+                </span>
+              </label>
+              <label class="custom-radio">
+                <input type="radio" name="radio" />
+                <span class="radio-btn"
+                  ><i class="las la-check"></i>
+                    <h3>Grade <br>7-9</h3>
+                </span>
+              </label>
+              <label class="custom-radio">
+                <input type="radio" name="radio" />
+                <span class="radio-btn"
+                  ><i class="las la-check"></i>
+                    <h3>Grade <br>10-12</h3>
+                </span>
+              </label>
+            </div>
+          
+          
+           <p style=" font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+           color: rgb(53, 47, 47);
+           margin-left: 5mm;
+           font-size: 20px; margin-top: 1mm;"> Which platform is the most suitable for your child to use?</p>
+           <div class="but">
+            <input type ="radio" >
+            <label for="rd1">Laptop</label><br>
+            <input type ="radio">
+            <label for="rd2">IPad</label><br>
+            <input type ="radio">
+            <label for="rd3">Computer</label><br>
+            </div>
+           <textarea name="cmnts" cols="60" rows="5" placeholder="Please leave your ideas and suggestions down in the box and contact us for further information"></textarea>
+           <button placeholder="Submit" class="submitt" onclick="alert('Thank you for your intersting ,we will text you as soon as possible :)')">SUMBIT</button>
+        </div>
+    </form>
+     </main>
+    </body>
+</html>

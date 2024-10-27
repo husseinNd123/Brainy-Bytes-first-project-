@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <Title>Brainy Bytes</Title>
+        <link rel="shortcut icon" type="image/jpeg" href="icon.jpeg">
+        <link rel="stylesheet" type="text/css" href="stylesheet.css"></link>
+        <script 
+          src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+        </script>
+    </head>
+    <body>
+    <div id="wraper">
+    
+    <header ><a href="index.html">
+    <img src="logo.png" width="350px" height="150px">
+    </a></header>  
+    <nav>
+      <a href="Course.html" >Courses</a>
+      <a href="Projects.html" >Projects</a>
+      <a href="Careers.html">Careers</a>
+      <a href="About Us.html">About-Us</a>
+      <button class="newb" style="width: 200px; height:45px ;padding: 0; font-size:18px;border-radius: 4mm;margin-left: -3mm ; margin-top: -250mm;
+    "><a href="Booking class.html" target="_blank">Book Your Free Demo!</a></button>
+      <button class="newb"  style="width: 200px; height:45px ;padding: 0; font-size:18px;border-radius: 4mm;margin-left: -6mm ; "><a href="Join Demo.html" target="_parent">Join Yor Free Trial Class</a></button>
+    
+    </nav>
+    <br style="clear: left;" > 
+    <main style="margin-left: 5mm;">
+            <img src="img1.png" id="img1">
+            <h1 >Strengthen your child</h1>
+            <h1 >at the coding world by creativity and critical thinking</h1>
+            <p style="margin-bottom: 2mm;margin-top: 15mm;color:rgb(19, 19, 18);font-size: 25px; font-family:Georgia, 'Times New Roman', Times, serif; "> Online Smartest Classes Technology classes <br>for your kids of Grade 1-12 </p>
+           
+            <form>
+            <label for="phone"></label>
+         <input type="tel" id="phone" name="phone" placeholder="Your Phone Number" aria-required="true" style="margin-left: 3mm;"> 
+         <button id="button"><a href="Booking class.html" target="_blank">Book Your Free Trial Class!</a></button>
+         <p id="error-msg" class="error"></p>
+         <button type="submit" style="display: none;">Submit</button>
+        </form>
+        <script>
+        const phoneInput = document.getElementById('phone');
+        const errorMsg = document.getElementById('error-msg');
+        
+        // Add event listener for form submission
+        document.querySelector('form').addEventListener('submit', (event) => {
+          event.preventDefault();
+          if (!validatePhoneNumber(phoneInput.value)) {
+            phoneInput.classList.add('error');
+            errorMsg.textContent = 'Please enter a valid phone number!';
+          } else {
+            phoneInput.classList.remove('error');
+            errorMsg.textContent = '';
+            // Submit the form
+            event.target.submit();
+          }
+        });
+        
+        function validatePhoneNumber(phoneNumber) {
+          const phonePattern =/^\+?([0-9]{1,4})?\s?\(?([0-9]{2,4})\)?[-\s]?([0-9]{3,4})[-\s]?([0-9]{4})$/; 
+          return phonePattern.test(phoneNumber);
+        }
+        </script>
+         <div>
+
+    </div>   
+    <div id="why">
+        <h1 style=" color: rgb(231, 236, 245);; padding-left: 10mm;padding-top: 2mm ;word-spacing: 2mm; font-size: 40px;">(Should my Kid Take coding Classes)?:<a href="#" id="more">Yes</a>:<a href="#" id="word" class="click">NO</a></h1>
+        <div class="header-area" style="margin-left: 10mm; margin-top: 3mm;">
+        <h2>Coding is very important for our children since it improves<br> many sides of the child such as: &nbsp;<span class="animate"></span></h2>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+        <script>
+          var typed=new Typed('.animate',{
+           strings : [
+               "Creativity",
+               "Critical Thinking",
+               "Problem Solving",
+               "Risk Taking",
+               "Self Confidence"
+           ],
+           typeSpeed:50,
+           backSpeed:50,
+           loop:true
+
+          });
+        </script>
+
+    <script>
+    const word = document.getElementById('word');
+     const why = document.getElementById('why');
+       word.addEventListener('mouseover' ,() => {
+          why.style.backgroundImage = `url('part2.gif')`;
+
+       });
+       word.addEventListener('mouseleave' ,() => {
+          why.style.backgroundImage = `url('part1.gif')`;
+       });
+      </script> 
+ </div>
+ <div style="margin-top: -10mm;">
+<div class="column" style="margin-left: -15mm; ">
+    <h3 style="font-size: 62px; margin-left: 25mm; margin-top: 24mm;"> &nbsp; how it works <img src="hw.gif" style="height: 120px; margin-bottom: -4mm; margin-left: -5mm;"></h3>
+    <img src="h.it.jpeg" id="ht">
+</div>
+<span class="left">
+    <table style="margin-top: -10mm;">
+        <tr>
+            <td  id="tdf"><a href="Booking class.html" >Try a free class!</a></td>
+        </tr>
+         <tr><td>Our certified trainers will recommend a course</td>
+        </tr>
+        <tr> <td>Start your coding trip</td></tr>
+        <tr>
+            <td>Earn your Brainy Bytes Program Certificate accredited by STEM.org USA</td>
+        </tr>
+    </table>
+    </span>
+    <img src="celebration.gif" style="height: 240px; width: 400px;margin-left: 270mm; margin-top: -29mm; ">
+ </div>
+    <h3 style="margin-top: 30mm; margin-left: 8mm; text-align: center; font-size: 40px;">Your kid's Journey to become a Coding and a Technical Expert</h3>
+   
+<img src="kid's journey.png" height="500px" style="margin-left: 0.07mm; margin-top: 0mm;">
+<div class="platforms">
+<div class="menu">
+    <div class="toggle"><ion-icon name="add-outline"></ion-icon></div>
+        <li style="--i:0">
+            <a href="#"><ion-icon name="logo-android"></ion-icon></a>
+        </li>
+        <li style="--i:1">
+            <a href="#"><ion-icon name="logo-apple"></ion-icon></a>
+        </li>
+        <li style="--i:2">
+            <a href="#"><ion-icon name="logo-google"></ion-icon></a>
+        </li>
+        <li style="--i:3">
+            <a href="#"><ion-icon name="logo-microsoft"></ion-icon></a>
+        </li>
+        <li style="--i:4">
+            <a href="#"><ion-icon name="logo-twitch"></ion-icon></a>
+        </li>
+    <li style="--i:5">
+        <a href="#"><ion-icon name="logo-android"></ion-icon></a>
+    </li>
+    
+</div>
+<h2 style="margin-left: 35mm; font-size: 50px;"> The best platforms for providing the best learning experience to kids.&#39;&#39;</h2>
+</div>
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+<script>
+    let toggle =document.querySelector('.toggle')
+    let menu =document.querySelector('.menu')
+    toggle.onclick=function(){
+        menu.classList.toggle('active')
+    }
+</script>
+    <h3 style="font-size: 50px;margin-top: -5mm ;">Our Intlligent Students Projects<img src="well.gif" style="height: 120px; margin-bottom: -4mm; margin-left: -0.5mm;">  </h3>
+    <div class="proj" style="margin-left: -10mm;">
+        <video src="text to speech p.mp4"  controls class="video"></video>
+        <video src="football game.mp4" controls class="video"></video>
+        <video src="thunkable.mp4" controls class="video"></video>
+        <video src="translator scratch.mp4" controls class="video"></video>
+    </div>
+    <button class="newb" style="margin-left: 38%;margin-right: 45%;margin-top: 12mm;">
+    <a href="Booking class.html">Make Projects Like Them!</a></button> 
+    <h3 style="font-size: 40px;margin-top: 30mm ;margin-left: 5mm; margin-bottom: 3mm;">Be part of parents giving their children all the knowledge and experience with Brainy Bites</h3>
+    <img src="fam.jpg" style=" margin-top: 5mm;border-radius: 15mm;height: 400px; width: 1310px; border: 2px solid rgb(6, 22, 73);">
+    <button class="newb" style="margin-left:130mm;margin-top: 7mm;">
+    <a href="Booking class.html">Join Them!</a></button>
+    <h3 style="font-size: 50px;margin-top: 15mm;margin-left: 10mm; margin-bottom: 2mm;"><img src="love.gif" style="height: 130px; margin-left: -0.1mm;margin-bottom: -9mm; margin-right: -7mm; width: 190px;"> Some Appericiation From Our Lovely Student</h3>
+    <div style="display: flex; margin-left: -3mm; margin-right: 20mm; margin-bottom: -15mm;margin-top: 2mm;" >
+        <div class="container">
+        <div class="video-container">
+            <video class="myVideo" width="130" height="120" controls>
+              <source src="jawad.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="content-container">
+            <h1>JAWAD</h1>
+            <p> He spent most of his time in learning coding and programming skills. He keeps concentrating during the sessions and always active.</p>
+          </div>
+          </div>
+          <div class="container">
+        <div class="video-container">
+            <video class="myVideo" width="1000" height="1000px" controls>
+              <source src="mahdi.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="content-container">
+            <h1>MAHDI</h1>
+            <p>He do a lot of exercises and practicing during the day. During sessions he always tries to know the information before the teacher say it to him.</p>
+          </div>
+          </div>
+          <div class="container">
+        <div class="video-container">
+            <video class="myVideo" width="130" height="120" controls>
+              <source src="hsen.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="content-container">
+            <h1>HUSEN</h1>
+            <p> He keeps watching videos about how to become professional in coding.<br> At classes he is very calm and always ready for learning new stuff.</p>
+          </div>
+          </div>
+          <div class="container">
+        <div class="video-container">
+            <video class="myVideo" width="130" height="120" controls>
+              <source src="ahmd.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="content-container">
+            <h1>AHMD</h1>
+         <p>He works hard to become a good programmer in the future.<br> He always try to give his concerns about stuff that he didn't understand well. </p>
+          </div>
+        </div>
+        <div class="container">
+        <div class="video-container" >
+            <video class="myVideo" width="130" height="120" controls>
+              <source src="youssef.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="content-container">
+            <h1 >YOSEF</h1>
+            <p> He is obsessed with programming and coding stuff and finding out who are the best programmers.<br> Youssef is always a step aged of his teacher and always ready.</p>
+          </div>
+         </div>
+    </div>
+
+        
+    <button class="newb" style="margin-left: 39%;margin-right: 47%;margin-top: 2%; width: 22%; ">
+    <a href="Booking class.html">waiting yours!</a></button>
+    
+<footer>
+     <div class="footer">
+        <div class="column">
+  <a href="index.html"><img src="logo.png" height="200px" width="500px" style="margin-left: -30mm;"></a><br>
+  <div style="display: flex;margin-left: 10mm; "  >
+<img src="Facebook icon social media.png" height="35px" width="35px" style=" margin-top: -8mm; margin-right: 3mm;">
+<img src="inst.png" height="35px" width="35px "style=" margin-top: -8mm; margin-right: 3mm;">
+<img src="Home.png" height="35px" width="35px" style ="margin-top: -8mm; margin-right: 3mm;">
+<img src="linkdein.png" height="35px" width="35px" style=" margin-top: -8mm; margin-right: 3mm">
+  </div>
+  </div>
+    <div class="column" style="margin-left: -10mm;;" ><br>
+            <h4 style="margin-bottom: 2mm;">STEAM certified</h4>
+            <img src="Stem-certificate.png"height="=180px" width="210px"  >
+    </div> 
+    <div class="column" style="margin-top: 6mm; padding-bottom: 5mm ;">
+    <h5>Company<br><a href="index.html" style="color: rgb(85, 95, 104);">Home</a><br><a href="Course.html"style="color: rgb(85, 95, 104);">Courses</a><br><a href="Projects.html"style="color: rgb(85, 95, 104);" >Projects</a><br>
+    <a href="Careers.html"style="color: rgb(85, 95, 104);" >Careers</a><br><a href="About Us.html"style="color: rgb(85, 95, 104);" >About-Us</a></h5>        
+    </div>
+    <div class="column" style="margin-top: 6mm; padding-bottom: 5mm ;">
+     <h4>Contact Us</h4><br>
+     <p style="font-size: 22px; margin-top: -8mm;font-weight: bold;">LEBANON</p>
+     <p style="font-size: 15px;color: rgb(88, 88, 90);">&nbsp;&nbsp;📍 Beirut +961 81884032</p><br>
+     <p style="font-size: 22px; margin-top: -8mm;font-weight: bold;">UAE</p>
+     <p style="font-size: 15px;color: rgb(88, 88, 90);">&nbsp;&nbsp;📍 Dubai +971 75543032</p><br>
+     <p style="font-size: 22px; margin-top: -8mm;font-weight: bold;">USA</p>
+     <p style="font-size: 15px;color: rgb(88, 88, 90);">&nbsp;&nbsp;📍 NW +1 81884555374</p>
+    </div>
+     </div><br>
+     <p style="color: gray;text-align: center; font-size: 20px; border-width: 2mm; padding-bottom: 5mm;">&copy; Copyright. Brainy Bytes 2023. All rights reserved.</p>
+     </footer>
+    </main>
+    </div>
+    </body>
+</html>

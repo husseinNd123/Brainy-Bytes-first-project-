@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <Title>Brainy Bytes</Title>
+    <link rel="shortcut icon" type="image/jpeg" href="icon.jpeg">
+    
+    <script 
+      src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+    </script>
+    <style>
+     html{
+    height: 100%;
+  }
+
+  body{
+      background-color: rgb(210, 216, 243);
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      background-size: contain;
+     font-family:'Times New Roman', Times, serif;
+      color: rgb(6, 63, 110); 
+      display: block;
+      width: 100%;
+      overflow-x: hidden;
+    
+  }
+  
+  header{
+     
+      text-align: center;
+      float: left;
+      margin-top: -18mm;
+      margin-left: -20mm;
+      line-height: 1mm;
+  }
+  
+  nav{
+    
+      font-family:fantasy;
+      word-spacing: 5mm;
+      font-size:27px;
+      margin-top: 15mm;
+      word-spacing: 16mm;
+      margin-left: -11mm;
+      
+  }
+
+  .nvg{
+    color: #483248;
+
+  }
+  a:link{
+      color: white;
+      text-decoration: none;
+  }
+  a:visited{
+      color: rgb(255, 255, 255);
+  }
+    a:hover{
+      color:#d8be2c ;
+    }
+    .newb{
+      width: 25%;
+      border: 2px solid rgb(6, 66, 94);
+      border-radius: 20px;
+     outline: none;
+     padding: 15px;
+     box-sizing: border-box;
+      transition: 0.3ms;font-size: larger;
+       font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+       background-color:rgb(240, 235, 239);
+       text-align: center; 
+  }  
+    .newb a:link{
+      color:#023047;
+    }
+    .newb a:visited{
+      color:rgb(107, 158, 182);
+    }
+    .newb a:hover{
+      color:rgb(199, 187, 16) ;
+     
+    }
+    main{
+      margin-top: 10mm;
+      margin-left: 4mm;
+      margin-right: 2mm;
+      font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  
+    }
+
+    
+
+  .left{
+      float: right;
+       margin-top: -60mm;
+       margin-left: -50mm;
+       margin-right: 20mm;
+  }
+  *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+  }
+ 
+  .newb{
+    width: 25%;
+    border: 2px solid rgb(6, 66, 94);
+    border-radius: 20px;
+   outline: none;
+   padding: 15px;
+   box-sizing: border-box;
+    transition: 0.3ms;font-size: larger;
+     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+     background-color:rgb(240, 235, 239);
+     text-align: center; 
+}
+  
+  .footer{
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-gap: 10px;
+      margin-top: 50mm;
+     margin-left: -3mm;
+      margin-right: -3mm;
+      font-family:'Times New Roman', Times, serif ;
+      color: rgb(14, 36, 99);
+      font-size: 30px;  
+  }
+
+  button :hover {
+    cursor:grab/pointer;
+    
+  }
+
+  button{
+    border-radius: 60px;
+    box-shadow: 0px 5px 20px 0px rgb(44, 44, 44);
+  }
+
+    .btn{
+      background-color: rgb(52, 164, 255);
+      border-radius: 25px;
+      width: 7%;
+      height: 45px;
+      font-size:17px;
+      border: solid rgb(14, 147, 255) ;
+      
+    }
+  
+    .container {
+      display: block;
+      margin-top: 150px;
+      width: 98%;
+      
+    }
+
+    .parent{
+      margin-top:   -4px;
+      display: flex;
+      overflow: visible;
+    }
+
+    .child {  
+      
+      text-align: center;
+      margin-top:  0px;
+      margin-bottom: 50mm;
+      margin-left: 32% ;
+      padding: 2em;
+      width: 37%;
+      height: max-content;
+    
+      background-image: url( child.jpg)  ;
+      background-size:100%;
+      
+      border-radius: 60px;
+      box-shadow: 0px 5px 15px 5px rgb(144, 129, 47);
+  
+    } 
+    p {
+        line-height: 1.1;
+      }
+
+    .feature {
+      display: block;
+      color: black;
+      width: 100%;
+      height: auto;
+      margin: 2mm;
+      margin-left: 0mm;
+      margin-top: 15px;
+      padding: 15px 8px 13px;
+      font-size: 16px;
+      line-height: 16px;
+      background-color: rgb(248, 240, 240);
+      border-radius: 20px;
+      font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      box-shadow: 0px 3px 15px 3px rgb(40, 40, 40);
+    }
+    
+    #Specs{
+      padding-bottom: 2mm;
+    }
+
+    .littleImg{
+      height: 220px;
+      width: 50%;
+      margin-top: -35%;
+    }
+
+    .JuniorImg{
+      height: 230px;
+      width: 70%;
+      margin-top: -55%;
+      margin-left: 1%;
+    }
+
+    .SeniorImg{
+      position: relative;
+      left: 35%;
+      top: 100%;
+      height: 200px;
+      width: 30%;
+      margin-top: -50%;
+      margin-left: 1%;
+    }
+
+    #letStart{
+      border-radius: 25px;
+      width: 35% ;
+      height: 50px;
+      color: whitesmoke;
+      font-size: large;
+      font-weight: bold;
+      font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      border:solid rgb(6, 63, 110);
+      background-color:rgb(6, 63, 110);
+    }
+
+    #CFK{
+      position: absolute;
+      top: 50%;
+      left:5%;      
+      width: auto;
+      height: 200px;
+    }
+
+    #rbtWaving{
+      position:absolute;
+      top: 25%;
+      right: 12.1%;
+    }
+
+    #CODE{
+      height: auto; 
+      width: 34%;
+      position: absolute;
+      bottom: 0%;
+      top: 111%;
+
+    }
+
+    #typKid{
+      position: absolute;
+      top: 110%;
+      right: -3%;
+      height: 300px;
+      width: auto;
+    }
+
+    #ltl{
+      font-size:  50px;;
+      color: rgb(255, 255, 255);
+      font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      }
+
+    #LETsCODE{
+      position:absolute;
+      top: 285%;
+      right: 3%;
+      width: 22%;
+      height: auto;
+    }
+    
+    #FutureMakers{
+      position:absolute;
+      top: 240%;
+      left: 0%;
+      width: auto;
+    }
+    
+    #SwitchCTB{
+      position:absolute;
+      top: 250%;
+      right: 3%;
+      width: 25%;
+      height: auto;
+    }
+
+    #TypRobot{
+      position:absolute;
+      top: 300%;
+      left: 5%;
+      width: 22%;
+      height: auto;
+    }
+
+    .fade {
+      animation-name: fade;
+      animation-duration: 1.5s;
+    }
+
+
+    @keyframes fade {
+      from {opacity: .4}
+      to {opacity: 1}
+    }
+    
+    
+    .mySlides {
+      display: none;
+    }
+
+    .mySlides2 {
+      display: none;
+    }
+
+
+    #more1, #more2, #more3,#more4{display: none;}
+
+    #READ_MORE1, #READ_MORE2, #READ_MORE3, #READ_MORE4{
+      border: none;
+      background-color: rgb(248, 240, 240);
+      box-shadow: none;
+      color: rgb(43, 43, 255);
+      font-weight: bold;
+    }
+    .prev, .next{
+      cursor: pointer;
+      width: auto;
+      margin-top: -22px;
+      padding: 16px;
+      color: #000000;
+      font-weight: bold;
+      font-size: 25px;
+      transition: 0.6s ease;
+      border-radius:10px;
+      user-select: none;
+    
+    }
+    .prev{
+      left: 11%;
+      position: absolute;
+      top: 65%;
+      float: left;
+    }
+
+    .next{
+      position: absolute;
+      top: 65%;
+      right: 10%;
+      float: right;
+    }
+
+    .prev:hover, .next:hover {
+      background-color: rgb(152, 152, 152);
+      color: whitesmoke;
+    }
+
+   
+
+     
+    </style>
+
+</head>
+<body>
+<div id="wraper">
+
+<header ><a href="index.html">
+<img src="logo.png" width="350px" height="150px">
+</a></header>  
+<nav>
+  <a href="Course.html" >Courses</a>
+  <a href="Projects.html" >Projects</a>
+  <a href="Careers.html">Careers</a>
+  <a href="About Us.html">About-Us</a>
+  <button class="newb" style="width: 200px; height:45px ;padding: 0; font-size:18px;border-radius: 4mm;margin-left: -3mm ; margin-top: -250mm;
+"><a href="Booking class.html" target="_blank">Book Your Free Demo!</a></button>
+  <button class="newb"  style="width: 200px; height:45px ;padding: 0; font-size:18px;border-radius: 4mm;margin-left: -6mm ; "><a href="Join Demo.html" target="_parent">Join Yor Free Trial Class</a></button>
+
+</nav>
+  <br style="clear: left;" > 
+
+  <main style="font-family:'Times New Roman', Times, serif; color: rgba(6, 63, 110, 0.9);">
+      <div style=" align-content: center;background-color: rgba(245, 245, 220, 0.5); width: 1000px; height: 100%; padding-bottom: 5% ; background-size: 100%; margin:5%; margin-left: 15%;  border-radius: 30px; box-shadow: 0px 5px 15px 5px rgb(25, 25, 25);">  
+        
+        <div style="text-align: center; overflow: visible; padding-top: 5%; padding-left: 5%;">
+          <img src="Scratch.gif" style="margin-top: -150px; margin-right: -450px; overflow: visible; margin-bottom: -170px; height: 320px; width: 500px;">
+          <br>
+          <video controls="controls" style=" float: right; width: 500px ; height: 281px; margin-right: 20px; margin-top: 60px; margin-left: 40px; border-radius: 30px; box-shadow: 0px 5px 15px 5px rgb(25, 25, 25); ">
+            <source src="What is Scratch Programming.mp4" type="video/mp4">
+          </video>
+          <p style="font-size: 9mm; font-weight: bold; text-align: justify; margin-bottom:20px; margin-top: -20px; margin-left: 70px;">What is Scratch?</p>
+          <p style="font-size: 5.3mm; text-indent:20px ; margin-left: 35px; margin-top:35px; line-height:1.3; text-align: justify;">Scratch is the world’s largest coding community for children and a coding language with a simple visual interface that allows young people to create digital stories, games, and animations. Scratch is designed, developed, and moderated by the Scratch Foundation, a nonprofit organization.</p>
+          <p style="font-size: 5.3mm; text-indent:20px ; margin-left: 35px; margin-top: 2px; margin-bottom: 20px; line-height:1.3; text-align: justify;">Scratch promotes computational thinking and problem solving skills; creative teaching and learning; self-expression and collaboration; and equity in computing.</p>
+        </div>
+        
+        <div  style="position: relative; margin-top: 120px;">
+          <p style="margin-bottom: 40px; font-size:9mm; font-weight:bold; margin-left: 90px;">Intro to Scratch</p>
+          <img src="Lets Start.gif" style=" float: left; margin-left: 0%; margin-right: 5px ; width: 200px; height: auto;"> 
+         
+          <a class="prev" onclick="plusSlides(-1)"> &#10094; </a>
+        <div class="mySlides fade">
+          <iframe  style=" width: 600px; height: 338px; margin-top: 1%; margin-left: 1%;border-radius: 30px; box-shadow: 0px 5px 15px 5px rgb(25, 25, 25);" src="https://www.youtube.com/embed/sb-wF35TuvQ" 
+          title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen >
+          </iframe>
+          <h1 style="position: absolute; right: 47%; margin-top: 15px;">Part 1</h1>
+        </div>
+        
+        <div class="mySlides fade">
+          <iframe  style=" width:600px; height:338px; margin-top: 1%; margin-left: 1%; border-radius: 30px; box-shadow: 0px 5px 15px 5px rgb(25, 25, 25); " src="https://www.youtube.com/embed/tbfkIXjc6CM" 
+            title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+          </iframe>
+          <h1 style="position: absolute; right: 47%; margin-top: 15px;">Part 2</h1>
+        </div>  
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) 
+        {            
+        showSlides(slideIndex += n);
+        }
+        function currentSlide(n)
+        {            
+        showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) 
+        {
+        let i;
+        let slides = document.getElementsByClassName("mySlides");
+        if (n > slides.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) 
+         {
+           slides[i].style.display = "none";
+         }
+        slides[slideIndex-1].style.display = "block";
+        }
+        </script>
+
+        <div style="margin-top: 120px;">
+          <p style="margin-bottom: 30px; font-size:9mm; font-weight:bold; margin-left: 90px;">Cat and Basketball</p>
+          <img src="Walking Scratch.gif" style=" float: left; margin-left: 2%; margin-right: 5px; margin-top: 15%; width: 150px; height: auto;">
+          <iframe style=" width:600px; height:338px; margin-top: 5%; margin-left: 5%; border-radius: 30px; box-shadow: 0px 5px 15px 5px rgb(25, 25, 25);" src="https://www.youtube.com/embed/H06SD2Qv0_A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+
+        <div style="margin-top: 120px;">
+          <p style="float: left; margin-bottom: 30px; font-size:9mm; font-weight:bold; margin-left: 90px;">Catching the Mouse</p>
+          <img src="mouse.gif" style=" margin-left: 15%; margin-bottom: -30px; overflow: visible; width: 400px; height: 100px;" >
+          <iframe style=" width:600px; height:338px; margin-top: 5%; margin-left: 21%; border-radius: 30px; box-shadow: 0px 5px 15px 5px rgb(25, 25, 25);" src="https://www.youtube.com/embed/3iL1tYQDrdM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+
+      </div>
+  </main>
+
+  <footer >
+    <div class="footer">
+       <div class="column">
+ <a href="index.html"><img src="logo.png" height="200px" width="500px" style="margin-left: -30mm;"></a><br>
+ <div style="display: flex;margin-left: 10mm; "  >
+<img src="Facebook icon social media.png" height="35px" width="35px" style=" margin-top: -8mm; margin-right: 3mm;">
+<img src="inst.png" height="35px" width="35px "style=" margin-top: -8mm; margin-right: 3mm;">
+<img src="Home.png" height="35px" width="35px" style ="margin-top: -8mm; margin-right: 3mm;">
+<img src="linkdein.png" height="35px" width="35px" style=" margin-top: -8mm; margin-right: 3mm">
+ </div>
+ </div>
+   <div class="column" style="margin-left: -10mm;;" ><br>
+           <h4 style="margin-bottom: 2mm;">STEAM certified</h4>
+           <img src="Stem-certificate.png"height="=180px" width="210px"  >
+   </div> 
+   <div class="column" style="margin-top: 6mm; padding-bottom: 5mm ;">
+   <h5>Company<br><a href="index.html" style="color: rgb(85, 95, 104);">Home</a><br><a href="Course.html"style="color: rgb(85, 95, 104);">Courses</a><br><a href="Services.html"style="color: rgb(85, 95, 104);" >Projects</a><br>
+   <a href="Careers.html"style="color: rgb(85, 95, 104);" >Careers</a><br><a href="About Us.html"style="color: rgb(85, 95, 104);" >About-Us</a></h5>        
+   </div>
+   <div class="column" style="margin-top: 6mm; padding-bottom: 5mm ;">
+    <h4>Contact Us</h4><br>
+    <p style="font-size: 22px; margin-top: -8mm;font-weight: bold;">LEBANON</p>
+    <p style="font-size: 15px;color: rgb(88, 88, 90);">&nbsp;&nbsp;📍 Beirut +961 81884032</p><br>
+    <p style="font-size: 22px; margin-top: -8mm;font-weight: bold;">UAE</p>
+    <p style="font-size: 15px;color: rgb(88, 88, 90);">&nbsp;&nbsp;📍 Dubai +971 75543032</p><br>
+    <p style="font-size: 22px; margin-top: -8mm;font-weight: bold;">USA</p>
+    <p style="font-size: 15px;color: rgb(88, 88, 90);">&nbsp;&nbsp;📍 NW +1 81884555374</p>
+   </div>
+    </div><br>
+    <p style="color: gray;text-align: center; font-size: 20px; border-width: 2mm; padding-bottom: 5mm;">&copy; Copyright. Brainy Bytes 2023. All rights reserved.</p>
+
+  </footer>
+
+</body>
+</html>
